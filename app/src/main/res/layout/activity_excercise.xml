@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ex"
+    app:theme="@style/AppTheme.NoActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/exercise_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layoutDirection="rtl"
+        app:layout_collapseMode="pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="النمط الرياضي"
+        app:titleTextColor="@color/white" />
+
+
+    <ImageView
+        android:id="@+id/exercise"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="412dp"
+        android:layout_height="370dp"
+        android:background="@drawable/rectangle_food"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/exercise"
+        app:layout_constraintVertical_bias="0.648">
+
+        <ViewFlipper
+            android:id="@+id/viewFlipperMela_60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/exercise_result1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textDirection="rtl"
+                android:layout_marginTop="30dp"
+                android:text="@string/male_60s"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/exercise_result2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textDirection="rtl"
+                android:text="@string/male_60s2"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/exercise_result3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textDirection="rtl"
+                android:text="@string/male_60s3"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/button"
+        android:text="السابق"
+        android:textSize="21sp"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="88dp"
+        android:layout_toStartOf="@+id/prev"
+        android:background="@drawable/button"
+        android:text="التالي"
+        android:textSize="21sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

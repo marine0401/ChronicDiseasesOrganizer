@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bikomobile:donutprogress:1.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9bdbc564ae31df926800dbed6bd201e2/donutprogress-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9bdbc564ae31df926800dbed6bd201e2/donutprogress-1.2.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bikomobile/donutprogress/1.2.0/882fac153ab9b2e1c9f90fa6fa8419e77b0a4da6/donutprogress-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bikomobile/donutprogress/1.2.0/318e297872bfad210c5f9651fcea0fc303d57233/donutprogress-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

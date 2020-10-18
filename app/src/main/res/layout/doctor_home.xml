@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:theme="@style/AppTheme.NoActionBar">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/docback"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="19dp"
+        android:text="الاسم :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/doctor_nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="1dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/employee_number"
+        app:layout_constraintEnd_toStartOf="@+id/doctor_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/employee_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="الرقم الوظيفي :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_name"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_name" />
+
+    <TextView
+        android:id="@+id/employee_numberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/employee_number"
+        app:layout_constraintEnd_toStartOf="@+id/employee_number"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/doctor_helloTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="من خلال الضغط على خانة البحث وإدخال رقم ملف المريض يمكنك رؤية قياساته اليومية والتحقق من حالته الطبيـة"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background" />
+
+    <ImageView
+        android:id="@+id/search_about_patient"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_shadowblue"
+        app:layout_constraintBottom_toTopOf="@+id/open_patient_filebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_helloTV"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/addTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="إضافة مريض جديد "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/add_patinetET"
+        app:layout_constraintTop_toTopOf="@+id/search_about_patient" />
+
+    <EditText
+        android:id="@+id/add_patinetET"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/white"
+        android:hint="  ادخل رقم ملف المريض"
+        android:layoutDirection="rtl"
+        app:layout_constraintBottom_toBottomOf="@+id/search_about_patient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="@+id/search_about_patient"
+        app:layout_constraintTop_toTopOf="@+id/addTV"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/open_patient_filebg"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_shadowblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/open_patient_fileTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="87dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/open_patient_files"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/open_patient_filebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/folder_img"
+        app:layout_constraintTop_toTopOf="@+id/open_patient_filebg" />
+
+    <ImageView
+        android:id="@+id/folder_img"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/open_patient_filebg"
+        app:layout_constraintEnd_toStartOf="@+id/open_patient_fileTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTV"
+        app:srcCompat="@drawable/folder" />
+
+    <ImageView
+        android:id="@+id/search_im"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_patinetBT"
+        app:layout_constraintEnd_toStartOf="@+id/add_patinetET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_helloTV"
+        app:layout_constraintVertical_bias="0.504"
+        app:srcCompat="@drawable/searchpatient" />
+
+    <Button
+        android:id="@+id/add_patinetBT"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="66dp"
+        android:background="@drawable/white_card"
+        android:text="إضافة"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/add_patinetET"
+        app:layout_constraintEnd_toStartOf="@+id/addTV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

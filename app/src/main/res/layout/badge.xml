@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_cart_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/cart_ic_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_notifications_black_24dp"
+            android:foreground="?android:selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/count_tv"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignTop="@+id/cart_ic_image"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/badge"
+            android:gravity="center"
+            android:text="0"
+            android:layout_marginLeft="25sp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="7dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

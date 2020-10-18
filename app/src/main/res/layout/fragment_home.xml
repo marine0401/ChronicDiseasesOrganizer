@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/mainactivity_toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="?attr/actionBarSize"-->
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        android:layoutDirection="rtl"-->
+    <!--        app:layout_collapseMode="pin"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_scrollFlags="scroll|enterAlways"-->
+    <!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <!--        app:titleTextColor="@color/white" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="w"-->
+    <!--        app:srcCompat="@drawable/rectangle"-->
+    <!--        tools:layout_editor_absoluteX="0dp"-->
+    <!--        tools:layout_editor_absoluteY="0dp" />-->
+
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="411dp"
+        android:layout_height="174dp"
+        android:background="@drawable/rectangle"
+        android:layoutDirection="rtl"
+        app:layout_constraintBottom_toTopOf="@+id/lifestyleTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="الاسم :"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/file_number"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patient_nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/patient_name"
+        app:layout_constraintEnd_toStartOf="@+id/patient_name" />
+
+
+    <TextView
+        android:id="@+id/file_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="52dp"
+        android:text="رقم الملف :"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/file_numberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="52dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/file_number" />
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:layout_width="146dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/patient_nameTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/care" />
+
+    <TextView
+        android:id="@+id/helloTV"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="من خلال الضغط على أيًّا من الخيارات التالية يمكنك تنظيم حياتك، وإدخال قياساتك بشكل يومي معنا"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editInfoBT"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="@+id/measurementBT"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/editInfoBT"
+        android:layout_width="183dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_shadowblue"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/measurementBT"
+        app:layout_constraintTop_toBottomOf="@+id/helloTV"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/measurementBT"
+        android:layout_width="178dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_shadowblue"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/lifestyleBT"
+        app:layout_constraintTop_toBottomOf="@+id/helloTV" />
+
+    <ImageView
+        android:id="@+id/diagnosisBT"
+        android:layout_width="185dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/button_shadowblue"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lifestyleBT"
+        app:layout_constraintTop_toTopOf="@+id/editInfoBT" />
+
+    <ImageView
+        android:id="@+id/lifestyleBT"
+        android:layout_width="176dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_shadowblue"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editInfoBT" />
+
+    <ImageView
+        android:id="@+id/edit_info_icon"
+        android:layout_width="92dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="108dp"
+        app:layout_constraintBottom_toBottomOf="@+id/diabetes_icon"
+        app:layout_constraintEnd_toEndOf="@+id/editInfoBT"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toEndOf="@+id/diabetes_icon"
+        app:layout_constraintTop_toTopOf="@+id/diabetes_icon"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/edit_info_ic" />
+
+    <ImageView
+        android:id="@+id/diabetes_icon"
+        android:layout_width="96dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/diabetes_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/measurementBT"
+        app:layout_constraintEnd_toEndOf="@+id/measurementBT"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="@+id/measurementBT"
+        app:layout_constraintTop_toBottomOf="@+id/helloTV" />
+
+    <ImageView
+        android:id="@+id/report_icon"
+        android:layout_width="87dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="@+id/diagnosisBT"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="@+id/diagnosisBT"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/report" />
+
+    <ImageView
+        android:id="@+id/lifestyle_icon"
+        android:layout_width="119dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lifestyleBT"
+        app:layout_constraintEnd_toEndOf="@+id/lifestyleBT"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="@+id/lifestyleBT"
+        app:layout_constraintTop_toBottomOf="@+id/measurementBT"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/lifestyle_icon" />
+
+    <TextView
+        android:id="@+id/EditIntoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="تعديل المعلومات"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editInfoBT"
+        app:layout_constraintEnd_toEndOf="@+id/editInfoBT"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="@+id/editInfoBT" />
+
+    <TextView
+        android:id="@+id/recordMesurementTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="تسجيل القياسات"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/measurementBT"
+        app:layout_constraintEnd_toEndOf="@+id/measurementBT"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/measurementBT" />
+
+    <TextView
+        android:id="@+id/lifestyleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="نمط الحياة"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lifestyleBT"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/lifestyleBT"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/diagnosisTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="التشخيص الطبي"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/diagnosisBT"
+        app:layout_constraintEnd_toEndOf="@+id/diagnosisBT"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="@+id/diagnosisBT" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

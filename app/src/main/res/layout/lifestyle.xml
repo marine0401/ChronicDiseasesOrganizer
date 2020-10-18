@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:theme="@style/AppTheme.NoActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/lifestyle_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:background="@color/colorPrimary"
+        android:layoutDirection="rtl"
+        app:layout_collapseMode="pin"
+        app:title="النمط الغذائي"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white" />
+
+    <FrameLayout
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/notifi_image"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@drawable/ic_notifications_black_24dp" />
+
+        <TextView
+            android:id="@+id/badge_counter"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layoutDirection="rtl"
+            android:text="1"
+            android:background="@drawable/badge"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/lifestyle_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/suger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifestyle_toolbar" />
+
+
+    <!--    <ScrollView-->
+    <!--        android:id="@+id/scrollView2"-->
+    <!--        android:layout_width="410dp"-->
+    <!--        android:layout_height="565dp"-->
+    <!--        android:layout_marginTop="170dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/admin_login_toolbar">-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="412dp"
+        android:layout_height="451dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/rectangle_food"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifestyle_toolbar">
+
+        <TextView
+            android:id="@+id/food_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="16.9sp" />
+
+<!--        &lt;!&ndash; Blood pressure&ndash;&gt;-->
+<!--        <ViewFlipper-->
+<!--            android:id="@+id/viewFlipperBP_low"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/low_BP"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="@string/food_low_BP"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16.9sp" />-->
+
+<!--        </ViewFlipper>-->
+
+<!--        <ViewFlipper-->
+<!--            android:id="@+id/viewFlipperBP_normal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/normal_BP"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="@string/food_normal_BP"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16.9sp" />-->
+
+<!--        </ViewFlipper>-->
+
+<!--        <ViewFlipper-->
+<!--            android:id="@+id/viewFlipperBP_upNormal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/upnormal_BP"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="@string/food_upnormal_BP"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16.9sp" />-->
+
+<!--        </ViewFlipper>-->
+
+        <ViewFlipper
+            android:id="@+id/viewFlipperBP_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/high_BP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_high_BP"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/high_BP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_high_BP2"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/high_BP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_high_BP3"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+        </ViewFlipper>
+
+        <!--suger-->
+        <ViewFlipper
+            android:id="@+id/viewFlipperD_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/low_suger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_low_suger1"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/low_suger2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_low_suger2"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/low_suger3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_low_suger3"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/viewFlipperD_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/normal_suger1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_normal_suger"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/normal_suger2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_normal_suger2"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/normal_suger3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_normal_suger3"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/normal_suger4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_normal_suger4"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/viewFlipperD_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/high_suger1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_high_suger"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/high_suger2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_high_suger2"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+            <TextView
+                android:id="@+id/high_suger3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_high_suger3"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+
+        </ViewFlipper>
+
+        <!--Kidney-->
+
+        <ViewFlipper
+            android:id="@+id/viewFlipperK_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/kidney_safe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/food_pot_safe"
+                android:textColor="@color/black"
+                android:textSize="16.9sp" />
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/button"
+        android:text="السابق"
+        android:textSize="21sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="88dp"
+        android:layout_toStartOf="@+id/prev"
+        android:background="@drawable/button"
+        android:text="التالي"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/openDoctorNote"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="31dp"-->
+    <!--        android:layout_marginBottom="514dp"-->
+    <!--        android:background="@drawable/outline_rounded"-->
+    <!--        android:text="openDoctorNote"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/linearLayout5"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/lifestyle_toolbar" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/badge_counter"-->
+<!--            android:layout_width="20sp"-->
+<!--            android:layout_height="20sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/badge"-->
+<!--            android:gravity="center"-->
+<!--            android:text="12"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="10sp"-->
+<!--            tools:layout_editor_absoluteX="285dp"-->
+<!--            tools:layout_editor_absoluteY="77dp"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

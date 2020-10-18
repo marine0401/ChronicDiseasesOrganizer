@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "411543691809",
+    "firebase_url": "https://test-f0fc8.firebaseio.com",
+    "project_id": "test-f0fc8",
+    "storage_bucket": "test-f0fc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411543691809:android:f10c2b0e9de88a67bb3960",
+        "android_client_info": {
+          "package_name": "com.example.miqyasapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411543691809-p49jifbv5lv6safvhqhccco5sld0d0id.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miqyasapp1",
+            "certificate_hash": "b43f66006a54fa1086ef02c917a0c968192e53d1"
+          }
+        },
+        {
+          "client_id": "411543691809-c8fcsvdd0dt8ku5um3o7d9qmss86ugsa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miqyasapp1",
+            "certificate_hash": "b482b57c56144386182fce491330b03617b443a4"
+          }
+        },
+        {
+          "client_id": "411543691809-jokkofils345ijrqv12h22fudu3vvk4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcXMrm8Cne-2L3f39BWVbG3GwbtsTWIfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411543691809-jokkofils345ijrqv12h22fudu3vvk4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
